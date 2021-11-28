@@ -1,0 +1,117 @@
+:root {
+    --background:  #ececec;
+    --borders: #cb343d;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=B612:wght@700&family=Concert+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'B612', sans-serif;
+    font-family: 'Concert One', cursive;
+}
+
+body{
+    background-color: var(--background);
+}
+
+header {
+    height: 70px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: 35px;
+    text-shadow: 2px 2px 2px red;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr;
+}
+
+.left-side {
+    grid-column: 1 / 2;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+button {
+    width: 70px;
+    height: 35px;
+    border-radius: 40px;
+    border: 1px solid var(--borders);
+    cursor: pointer;
+}
+
+.input-box {
+    text-align: center;
+    
+}
+
+.container {
+    grid-column: 2 / 3;
+    display: flex;
+    justify-content: center;
+
+}
+
+.grid-container {
+    width: 450px;
+    height: 450px;
+    box-shadow: var(--borders) 0 0 3px 3px;
+
+}
+
+.square-div {
+    border: 1px solid black;
+    cursor: crosshair;
+} 
+
+.right-side {
+    grid-column: 3 / 4;
+    gap: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+input[type='range'] {
+    accent-color: var(--borders);
+    cursor: pointer;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}
+
+.fa-github {
+    font-size: 20px;
+    color: black;
+}
+
+/* hovers */
+
+button:hover {
+    background: var(--borders);
+    color: white;
+    transform: rotate(25deg);
+}
+
+.input-box p:hover {
+    background: var(--borders);
+    color: white;
+    transform: scale(1.2)
+}
+

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8e91a7f092.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Project: Etch-a-Sketch</title>
+</head>
+<body>
+    <header>
+        <h1>Etch-a-Sketch</h1>
+    </header>
+    <main>
+        <div class="left-side">
+            <button type="button" class="buttons" id="black-button">Black</button>
+            <button type="button" class="buttons" id="white-button">Erase</button>
+            <button type="button" class="buttons" id="colors-button">Colors</button>
+            <div class="input-box">   
+                <input type="color" id="color-input">
+                <p>Choose your own color!</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="grid-container"></div>
+        </div>
+        <div class="right-side">
+            <div>
+                <p>Choose your range</p>
+                <input type="range" min="10" max="30" step="10" value="10" id="slider">
+            </div>
+            <button type="button" class="buttons" id="clear-page">Clear</button>
+        </div>
+    </main>
+    <footer>
+        <a href="https://github.com/TatiAhumadaCode" target="_blank"><i class="fab fa-github"></i></a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
